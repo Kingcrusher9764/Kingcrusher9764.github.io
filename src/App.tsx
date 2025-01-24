@@ -1,7 +1,11 @@
 import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 import "./App.css"
+import "./Locomotive.css"
 import { useRef } from "react"
 import { useLocomotiveWithGsap } from "./hooks/LocomotiveWithGsap"
+import Navbar from "./components/Navbar"
+import About from "./pages/About"
+import Hero from "./pages/Hero"
 
 export default function App() {
     const containerRef = useRef(null)
@@ -25,8 +29,9 @@ export function AppContent() {
 
     return (
         <div data-scroll-section className="bg-[#aaa]">
-            <div data-scroll data-scroll-speed="-4" className="h-screen bg-red-500"></div>
-            <div className="h-screen bg-green-500"></div>
+            <Navbar />
+            <Hero />
+            <About />
         </div>
     )
 }

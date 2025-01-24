@@ -8,9 +8,9 @@ on:
       - main
 
 permissions:
-  id-token: write
-  pages: write
-  actions: read
+  id-token: write # this is required for upload-pages-artifact
+  pages: write # this is required for upload-pages-artifact
+  actions: read # this permission is required for deployment of the github pages in deploy-pages@v4 and upload-pages-artifact@v3
 
 jobs:
   build:
