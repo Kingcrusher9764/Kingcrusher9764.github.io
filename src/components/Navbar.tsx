@@ -4,7 +4,9 @@ import MenuIcon from "../icons/Menu"
 
 export default function Navbar() {
     return (
-        <nav className="z-[99] fixed top-0 left-0 w-full flex items-center justify-between p-5">
+        <nav
+            className="z-[99] fixed top-0 left-0 w-full flex items-center justify-between p-5"
+        >
             <h1 className="text-5xl font-[Neue] font-[300] text-[#302c1a]">VIKRANT</h1>
 
             <MenuSection />

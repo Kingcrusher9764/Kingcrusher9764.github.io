@@ -28,10 +28,12 @@ export function AppContent() {
     useLocomotiveWithGsap()
 
     return (
-        <div data-scroll-section className="bg-[#aaa]">
+        <div>
             <Navbar />
-            <Hero />
-            <About />
+            <div data-scroll-section className="bg-[#aaa]">
+                <Hero />
+                <About />
+            </div>
         </div>
     )
 }
