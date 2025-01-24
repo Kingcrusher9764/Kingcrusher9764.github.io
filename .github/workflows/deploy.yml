@@ -5,7 +5,7 @@ name: Build and Deploy Portfolio
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   gh-pages:
