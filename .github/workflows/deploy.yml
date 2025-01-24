@@ -10,6 +10,7 @@ on:
 permissions:
   id-token: write
   pages: write
+  actions: read
 
 jobs:
   build:
@@ -40,7 +41,7 @@ jobs:
         run: pnpm run build
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
