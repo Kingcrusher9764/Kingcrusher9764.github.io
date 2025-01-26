@@ -6,6 +6,7 @@ import { useLocomotiveWithGsap } from "./hooks/LocomotiveWithGsap"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Hero from "./pages/Hero"
+import Skills from "./pages/Skills"
 
 export default function App() {
     const containerRef = useRef(null)
@@ -15,6 +16,7 @@ export default function App() {
             options={{
                 smooth: true,
             }}
+            watch={[]}
             conatinerRef={containerRef}
         >
             <div data-scroll-container ref={containerRef}>
@@ -33,6 +35,7 @@ export function AppContent() {
             <div data-scroll-section className="bg-[#aaa]">
                 <Hero />
                 <About />
+                <Skills />
             </div>
         </div>
     )

@@ -1,3 +1,11 @@
+:root{
+    --bg-blue: #55b1ff;
+    --bg-yellow: #ffd955;
+
+    --text-black: #302c1a;
+    --text-blue: #0d4c82;
+}
+
 @font-face{
     font-family: "Monoton";
     src: url("./assets/fonts/Monoton/Regular.ttf");
@@ -11,4 +19,9 @@
 @font-face{
     font-family: "Silkscreen";
     src: url("./assets/fonts/Silkscreen/Regular.ttf");
+}
+
+.text-stroke{
+    -webkit-text-stroke: 1px #222;
+    color: transparent;
 }
