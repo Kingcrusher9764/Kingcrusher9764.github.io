@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Hero from "./pages/Hero"
 import Skills from "./pages/Skills"
+import Footer from "./pages/Footer"
 
 export default function App() {
     const containerRef = useRef(null)
@@ -36,6 +37,7 @@ export function AppContent() {
                 <Hero />
                 <About />
                 <Skills />
+                <Footer />
             </div>
         </div>
     )
