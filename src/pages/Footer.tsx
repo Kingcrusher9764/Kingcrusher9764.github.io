@@ -9,11 +9,12 @@ export default function Footer() {
         <footer className="bg-[var(--bg-blue)]">
             <div>
                 <div className="font-[Neue]">
-                    <div className="flex flex-col sm:flex-row items-center justify-between">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-between">
 
                         <ContactLink
                             link="https://github.com/Kingcrusher9764"
                             label="Github"
+                            className="border-none bg-[#333] text-[#d6d6d6]"
                         >
                             <Github />
                         </ContactLink>
@@ -21,6 +22,7 @@ export default function Footer() {
                         <ContactLink
                             link="https://linkedin.com/in/vikrant_tiwari9764"
                             label="Linkedin"
+                            className="border-none bg-[#0077b5] text-[#cce4f0]"
                         >
                             <Linkedin />
                         </ContactLink>
@@ -28,6 +30,7 @@ export default function Footer() {
                         <ContactLink
                             link="mailto:tiwarivikrant9764@gmail.com"
                             label="Gmail"
+                            className="border-none bg-[#10ba46] text-white"
                         >
                             <Gmail />
                         </ContactLink>
@@ -35,8 +38,8 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="text-center p-4">
-                    COPYRIGHT &copy;, Vikrant Tiwari All rights reserved
+                <div className="text-center p-4 text-[var(--text-blue)] text-xl">
+                    Copyright &copy;, Vikrant Tiwari All rights reserved
                 </div>
             </div>
         </footer>

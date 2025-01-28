@@ -8,7 +8,7 @@ export default function Skills() {
             <div className="w-11/12">
                 <TitleBox title={"Skills"} />
 
-                <div className="flex flex-row flex-wrap justify-center gap-[10px] border-2 border-green-500 p-4 rounded-xl">
+                <div className="grid grid-cols-[repeat(auto-fill,_minmax(120px,_auto))] justify-items-center gap-[10px]  p-4">
 
                     <SkillBox skillName="Node.js" skillImage="/icons/nodejs.png" url="https://nodejs.org/en" />
                     <SkillBox skillName="React" skillImage="/icons/react.png" url="https://react.dev/" />
@@ -44,7 +44,7 @@ export function SkillBox({
             href={url}
             className="w-[max-content]"
         >
-            <div className="bg-blue-400 rounded-xl p-2 w-[120px] h-[120px] flex items-center justify-center">
+            <div className="bg-[var(--skill-bg)] rounded-xl p-2 w-[120px] h-[120px] flex items-center justify-center">
                 <img
                     src={skillImage}
                     alt={skillName}
@@ -52,7 +52,7 @@ export function SkillBox({
                 />
             </div>
 
-            <div className="text-center mt-4 text-3xl">{skillName}</div>
+            <div className="text-center mt-4 text-3xl text-[var(--text-blue)]">{skillName}</div>
         </a>
     )
 }
