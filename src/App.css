@@ -27,3 +27,8 @@
     -webkit-text-stroke: 1px #222;
     color: transparent;
 }
+
+::selection{
+    background: var(--skill-bg);
+    color: white;
+}
