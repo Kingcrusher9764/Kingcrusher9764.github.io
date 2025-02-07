@@ -44,7 +44,9 @@ export function SkillBox({
             href={url}
             className="w-[max-content]"
         >
-            <div className="bg-[var(--skill-bg)] rounded-xl p-2 w-[120px] h-[120px] flex items-center justify-center">
+            <div
+                className="bg-[var(--skill-bg)] rounded-xl p-2 w-[120px] h-[120px] flex items-center justify-center shadow-[5px_5px_5px_5px_rgba(24,23,13,.5)] hover:shadow-none transition-all duration-300 ease"
+            >
                 <img
                     src={skillImage}
                     alt={skillName}

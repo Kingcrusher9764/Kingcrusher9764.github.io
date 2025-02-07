@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import useHeroLine from "../hooks/HeroLine";
 import cn from "../utils/cn";
+import StringElement from "../components/StringElement"
 
 export default function Hero() {
 
@@ -12,7 +13,6 @@ export default function Hero() {
 
                 <HeroLine
                     text="Hi, I'm Vikrant Tiwari"
-                    className=""
                 />
                 <HeroLine
                     text="A Full Stack Developer"
@@ -20,7 +20,6 @@ export default function Hero() {
                 />
                 <HeroLine
                     text="At Navi Mumbai, Maharashtra"
-                    className=""
                 />
 
             </div>
@@ -39,8 +38,23 @@ export function HeroLine({
     useHeroLine(lineRef)
 
     return (
-        <h3 ref={lineRef} className={cn("hero-line", "text-8xl px-4 py-2 border-b-2", className)}>
-            {text}
-        </h3>
+        <div className="relative">
+            <h3
+                ref={lineRef}
+                className={
+                    cn(
+                        "hero-line",
+                        "text-6xl md:text-7xl lg:text-8xl px-4 py-2",
+                        className,
+                    )
+                }
+            >
+                {text}
+            </h3>
+
+            <StringElement className="" />
+
+        </div>
     )
 }
+
